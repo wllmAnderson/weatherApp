@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Including Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Weather App</h1>
-    <input type="text" id="city" placeholder="Enter city" required>
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weather"></div>
+<body class="bg-dark text-white"> <!-- Applying black background and white text -->
+    <div class="container">
+        <h1 class="text-center my-4">Weather App</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="city" class="form-control" placeholder="Enter city" required>
+                <button onclick="getWeather()" class="btn btn-primary mt-2">Get Weather</button>
+                <div id="weather" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
