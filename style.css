@@ -5,3 +5,15 @@ body {
 #weather {
     margin-top: 20px;
 }
+
+.day-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.night-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+

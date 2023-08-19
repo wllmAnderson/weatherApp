@@ -1,3 +1,17 @@
+function toggleMode() {
+    const body = document.getElementById('body');
+    const button = document.getElementById('toggleMode');
+    if (body.classList.contains('day-mode')) {
+        body.classList.remove('day-mode');
+        body.classList.add('night-mode');
+        button.textContent = 'Toggle Day Mode';
+    } else {
+        body.classList.remove('night-mode');
+        body.classList.add('day-mode');
+        button.textContent = 'Toggle Night Mode';
+    }
+}
+
 function getWeather() {
     const city = document.getElementById('city').value;
     const apiKey = '2c479dfacc57a44301b67fd8100ab6c6';
