@@ -7,9 +7,19 @@
     <!-- Including Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <style>
+        .day-mode {
+            background-color: white;
+            color: black;
+        }
+        .night-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
 <body id="body" class="day-mode"> <!-- Add id and default class -->
-    <button id="toggleMode" onclick="toggleMode()" class="btn btn-secondary">Toggle Night Mode</button>
+    <button id="toggleMode" onclick="toggleMode()">Toggle Night Mode</button>
         <div class="container">
         <h1 class="text-center my-4">Weather App</h1>
         <div class="row justify-content-center">

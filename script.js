@@ -1,14 +1,4 @@
-import { createRoot } from 'react-dom/client';
 
-// Clear the existing HTML content
-document.body.innerHTML = '<div id="app"></div>';
-
-// Use React's Concurrent Mode to render a React component to the designated element
-const root = createRoot(document.getElementById('app'));
-root.render(<h1>Hello, world</h1>);
-/**
- * Toggles the display mode between day and night.
- */
 
 function toggleMode() {
     const body = document.getElementById('body');
@@ -23,6 +13,7 @@ function toggleMode() {
         button.textContent = 'Toggle Night Mode';
     }
 }
+
 /**
  * Fetches weather data for the given city and updates the DOM with the results.
  */
